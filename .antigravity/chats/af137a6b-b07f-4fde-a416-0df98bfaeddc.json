@@ -1,0 +1,21 @@
+{
+  "sessionId": "af137a6b-b07f-4fde-a416-0df98bfaeddc",
+  "name": "Create a modern, professional, clean, and",
+  "createdAt": "2026-11-05T14:41:33.801Z",
+  "filename": "af137a6b-b07f-4fde-a416-0df98bfaeddc.json",
+  "geminiStarted": false,
+  "messages": [
+    {
+      "id": "3ca2f5a2-15ed-4ef1-ac48-b9cf9ecb34db",
+      "role": "user",
+      "content": "Create a modern, professional, clean, and fully responsive sample website suitable for an internship program project.\nWebsite Requirements:\nOverall Design\nMake the website look formal, elegant, and professional.\nUse a minimal and modern UI with a clean layout.\nChoose a professional colour palette such as navy blue, white, light grey, and subtle blue accents.\nUse readable fonts, proper spacing, consistent alignment, and subtle animations.\nAvoid excessive colours, flashy effects, or unnecessary design elements.\nHomepage\nCreate a professional navigation bar with a logo and menu options.\nInclude a welcoming hero section with a clear heading, short description, and a Call-to-Action button.\nAdd a professional background or subtle visual elements.\nInclude an introduction about the organization or project.\nAbout Section\nExplain the purpose of the website.\nInclude the organization's mission, vision, and objectives.\nUse a structured and easy-to-read layout.\nServices / Features Section\nDisplay key services or features using clean cards.\nInclude simple icons and short descriptions.\nMaintain consistent spacing and styling.\nProjects / Work Section\nAdd a section to showcase sample projects or completed work.\nUse professional cards with project titles, descriptions, and relevant images.\nContact Section\nInclude a contact form with Name, Email, Subject, and Message fields.\nAdd contact information and social media links.\nInclude basic form validation.\nFooter\nAdd copyright information, quick navigation links, and contact details.\nTechnical Requirements:\nUse HTML, CSS, and JavaScript or a suitable modern framework.\nMake the website fully responsive on mobile phones, tablets, and desktops.\nEnsure all navigation links and buttons work correctly.\nUse semantic HTML and accessible design practices.\nMaintain good colour contrast and readable font sizes.\nAdd proper labels to form fields.\nInclude hover effects and subtle transitions.\nOptimize images and website loading performance.\nKeep the code clean, organized, and easy to understand.\nImportant Instructions:\nDo not create a basic or outdated-looking website.\nMake it look like a genuine professional organization's website.\nUse realistic sample content instead of lorem ipsum.\nEnsure the website is complete and functional, not just a visual mockup.\nPrioritize accessibility, usability, simplicity, and professional presentation.\nBefore finishing, test the website for responsiveness, broken links, and basic functionality.\nThe final result should look polished and suitable for presenting as a sample project during an internship evaluation.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-high",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-11-05T14:41:34.344Z",
+      "sender": "ios",
+      "is_cancelled": false
+    }
+  ]
+}
