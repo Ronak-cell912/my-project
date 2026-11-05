@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <rect width="800" height="500" fill="#061E1A"/>
+  <defs>
+    <linearGradient id="ecoGrad" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#042F2E"/>
+      <stop offset="0.5" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#022C22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#ecoGrad)"/>
+
+  <g transform="translate(60, 40)">
+    <rect width="680" height="420" rx="12" fill="#0F172A" stroke="#115E59" stroke-width="1.5"/>
+    <rect width="680" height="36" rx="12" fill="#042F2E"/>
+    <circle cx="24" cy="18" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="18" r="5" fill="#F59E0B"/>
+    <circle cx="60" cy="18" r="5" fill="#10B981"/>
+    <text x="86" y="22" fill="#99F6E4" font-family="system-ui, sans-serif" font-size="12" font-weight="500">ecometric-grid / iot-telemetry-engine-solar-node-v12</text>
+    <rect x="545" y="10" width="115" height="18" rx="4" fill="#0D9488" fill-opacity="0.3"/>
+    <text x="555" y="22" fill="#5EEAD4" font-family="monospace" font-size="10" font-weight="600">4.8 GW GENERATED</text>
+
+    <!-- Gauges & Telemetry -->
+    <g transform="translate(35, 60)">
+      <rect width="180" height="120" rx="8" fill="#134E4A" fill-opacity="0.2" stroke="#0D9488"/>
+      <text x="16" y="28" fill="#A7F3D0" font-family="system-ui" font-size="11">Carbon Offset Telemetry</text>
+      <text x="16" y="60" fill="#FFFFFF" font-family="system-ui" font-size="24" font-weight="700">-2,480 t</text>
+      <text x="16" y="88" fill="#34D399" font-family="system-ui" font-size="11">CO2e / Weekly Cycle</text>
+      <rect x="16" y="98" width="145" height="6" rx="3" fill="#042F2E"/>
+      <rect x="16" y="98" width="120" height="6" rx="3" fill="#10B981"/>
+
+      <rect x="215" width="180" height="120" rx="8" fill="#134E4A" fill-opacity="0.2" stroke="#0D9488"/>
+      <text x="231" y="28" fill="#A7F3D0" font-family="system-ui" font-size="11">Edge Sensor Uptime</text>
+      <text x="231" y="60" fill="#FFFFFF" font-family="system-ui" font-size="24" font-weight="700">99.98%</text>
+      <text x="231" y="88" fill="#2DD4BF" font-family="system-ui" font-size="11">2,840 Active LoRaWAN</text>
+      <rect x="231" y="98" width="145" height="6" rx="3" fill="#042F2E"/>
+      <rect x="231" y="98" width="142" height="6" rx="3" fill="#14B8A6"/>
+
+      <rect x="430" width="180" height="120" rx="8" fill="#134E4A" fill-opacity="0.2" stroke="#0D9488"/>
+      <text x="446" y="28" fill="#A7F3D0" font-family="system-ui" font-size="11">Battery Storage State</text>
+      <text x="446" y="60" fill="#FFFFFF" font-family="system-ui" font-size="24" font-weight="700">94.2%</text>
+      <text x="446" y="88" fill="#FBBF24" font-family="system-ui" font-size="11">Surplus Dispatched</text>
+      <rect x="446" y="98" width="145" height="6" rx="3" fill="#042F2E"/>
+      <rect x="446" y="98" width="136" height="6" rx="3" fill="#10B981"/>
+    </g>
+
+    <!-- Real-time Power Generation Graph -->
+    <g transform="translate(35, 205)">
+      <rect width="610" height="180" rx="8" fill="#042F2E" fill-opacity="0.5" stroke="#134E4A"/>
+      <text x="20" y="28" fill="#5EEAD4" font-family="system-ui" font-size="12" font-weight="600">Dynamic Load vs. Renewable Feed-in Curve</text>
+
+      <!-- Grid lines -->
+      <line x1="20" y1="55" x2="590" y2="55" stroke="#134E4A" stroke-width="1" stroke-dasharray="3 3"/>
+      <line x1="20" y1="95" x2="590" y2="95" stroke="#134E4A" stroke-width="1" stroke-dasharray="3 3"/>
+      <line x1="20" y1="135" x2="590" y2="135" stroke="#134E4A" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Wave 1 (Solar generation) -->
+      <path d="M 30 145 C 100 130, 160 55, 280 50 C 400 45, 460 120, 580 145" fill="none" stroke="#2DD4BF" stroke-width="2.5"/>
+      <!-- Wave 2 (Grid demand) -->
+      <path d="M 30 115 C 120 120, 200 95, 300 90 C 410 85, 490 100, 580 92" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 2"/>
+
+      <circle cx="280" cy="50" r="4" fill="#2DD4BF"/>
+      <text x="250" y="40" fill="#A7F3D0" font-family="monospace" font-size="10">Peak Solar: 4.8GW</text>
+
+      <rect x="20" y="155" width="10" height="10" fill="#2DD4BF" rx="2"/>
+      <text x="38" y="164" fill="#CCFBF1" font-family="system-ui" font-size="10">Renewable Output</text>
+      <rect x="160" y="155" width="10" height="10" fill="#38BDF8" rx="2"/>
+      <text x="178" y="164" fill="#CCFBF1" font-family="system-ui" font-size="10">Base Grid Demand</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <rect width="800" height="500" fill="#0B1120"/>
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B132B"/>
+      <stop offset="0.5" stop-color="#1C2541"/>
+      <stop offset="1" stop-color="#0B1120"/>
+    </linearGradient>
+    <pattern id="grid2" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url="#bgGrad2"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+
+  <g transform="translate(60, 40)">
+    <rect width="680" height="420" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <rect width="680" height="36" rx="12" fill="#0F172A"/>
+    <circle cx="24" cy="18" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="18" r="5" fill="#F59E0B"/>
+    <circle cx="60" cy="18" r="5" fill="#10B981"/>
+    <text x="86" y="22" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">cloudscale-controller / us-east-1 · eu-west-1 · ap-northeast-1</text>
+    <rect x="545" y="10" width="115" height="18" rx="4" fill="#10B981" fill-opacity="0.15"/>
+    <text x="555" y="22" fill="#34D399" font-family="monospace" font-size="10" font-weight="600">PODS: 1,420 ACTIVE</text>
+
+    <!-- Cluster Nodes Mesh -->
+    <g transform="translate(40, 65)">
+      <!-- Main Controller Node -->
+      <rect x="240" y="30" width="120" height="55" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+      <text x="265" y="54" fill="#38BDF8" font-family="monospace" font-size="11" font-weight="700">K8s MASTER</text>
+      <text x="255" y="72" fill="#94A3B8" font-family="system-ui" font-size="10">AutoScaler Core v2</text>
+
+      <!-- Worker Region 1 -->
+      <rect x="20" y="160" width="150" height="100" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <text x="34" y="185" fill="#F8FAFC" font-family="system-ui" font-size="12" font-weight="600">Region: US-East</text>
+      <rect x="34" y="198" width="122" height="8" rx="4" fill="#1E293B"/>
+      <rect x="34" y="198" width="98" height="8" rx="4" fill="#38BDF8"/>
+      <text x="34" y="225" fill="#94A3B8" font-family="monospace" font-size="10">Load: 78% (520 Pods)</text>
+      <text x="34" y="245" fill="#10B981" font-family="monospace" font-size="10">Latency: 12ms (P99)</text>
+
+      <!-- Worker Region 2 -->
+      <rect x="225" y="160" width="150" height="100" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <text x="239" y="185" fill="#F8FAFC" font-family="system-ui" font-size="12" font-weight="600">Region: EU-West</text>
+      <rect x="239" y="198" width="122" height="8" rx="4" fill="#1E293B"/>
+      <rect x="239" y="198" width="75" height="8" rx="4" fill="#2563EB"/>
+      <text x="239" y="225" fill="#94A3B8" font-family="monospace" font-size="10">Load: 61% (440 Pods)</text>
+      <text x="239" y="245" fill="#10B981" font-family="monospace" font-size="10">Latency: 19ms (P99)</text>
+
+      <!-- Worker Region 3 -->
+      <rect x="430" y="160" width="150" height="100" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <text x="444" y="185" fill="#F8FAFC" font-family="system-ui" font-size="12" font-weight="600">Region: AP-North</text>
+      <rect x="444" y="198" width="122" height="8" rx="4" fill="#1E293B"/>
+      <rect x="444" y="198" width="86" height="8" rx="4" fill="#38BDF8"/>
+      <text x="444" y="225" fill="#94A3B8" font-family="monospace" font-size="10">Load: 68% (460 Pods)</text>
+      <text x="444" y="245" fill="#10B981" font-family="monospace" font-size="10">Latency: 24ms (P99)</text>
+
+      <!-- Connecting Lines -->
+      <path d="M 260 85 L 95 160" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <path d="M 300 85 L 300 160" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <path d="M 340 85 L 505 160" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+      <!-- Real-time throughput graph at bottom -->
+      <rect x="20" y="280" width="560" height="65" rx="6" fill="#0F172A" stroke="#334155"/>
+      <path d="M 35 325 Q 120 310 180 328 T 320 295 T 460 315 T 565 292" fill="none" stroke="#38BDF8" stroke-width="2"/>
+      <text x="35" y="298" fill="#94A3B8" font-family="system-ui" font-size="10">Real-Time Ingress Throughput: 428,000 req/sec</text>
+      <circle cx="565" cy="292" r="3.5" fill="#34D399"/>
+    </g>
+  </g>
+</svg>
